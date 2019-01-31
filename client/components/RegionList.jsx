@@ -1,8 +1,15 @@
 import React from 'react'
+import attributes from '../../data/attributes'
+import {Link} from 'react-router-dom'
 
 const RegionList = () => {
   return (
-    <h1>Regions</h1>
+    <div>
+      <h1>Regions</h1>
+      <ul>
+        {attributes.region.map(reg => { return <li key={reg}><Link to={`/region/${reg}`}>{reg}</Link></li> })}
+      </ul>
+    </div>
   )
 }
 

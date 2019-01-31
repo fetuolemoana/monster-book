@@ -1,8 +1,15 @@
 import React from 'react'
+import attributes from '../../data/attributes'
+import {Link} from 'react-router-dom'
 
 const HabitatList = () => {
   return (
-    <h1>Habitats</h1>
+    <div>
+      <h1>Habitat</h1>
+      <ul>
+        {attributes.habitat.map(hab => { return <li key={hab}><Link to={`/habitat/${hab}`}>{hab}</Link></li> })}
+      </ul>
+    </div>
   )
 }
 
