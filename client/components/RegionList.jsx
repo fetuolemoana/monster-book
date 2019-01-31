@@ -7,7 +7,7 @@ const RegionList = () => {
     <div>
       <h1>Regions</h1>
       <ul>
-        {attributes.region.map(reg => { return <li key={reg}><Link to={`/region/${reg}`}>{reg}</Link></li> })}
+        {attributes.region.map(reg => { return <li key={reg}><Link to={`/attribute/region/${reg}`}>{reg}</Link></li> })}
       </ul>
     </div>
   )
