@@ -7,7 +7,7 @@ const HabitatList = () => {
     <div>
       <h1>Habitat</h1>
       <ul>
-        {attributes.habitat.map(hab => { return <li key={hab}><Link to={`/habitat/${hab}`}>{hab}</Link></li> })}
+        {attributes.habitat.map(hab => { return <li key={hab}><Link to={`/attribute/habitat/${hab}`}>{hab}</Link></li> })}
       </ul>
     </div>
   )
