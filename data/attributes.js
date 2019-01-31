@@ -1,7 +1,7 @@
 const attributes = {
-  region: ['Europe', 'Asia', 'Africa', 'Oceania', 'Americas'],
-  elements: ['Wind', 'Water', 'Earth'],
-  habitat: ['Lake', 'Mountains', 'River', 'Forest', 'Cave']
+  region: ['europe', 'asia', 'africa', 'oceania', 'americas'],
+  element: ['wind', 'water', 'earth'],
+  habitat: ['lake', 'mountains', 'river', 'forest', 'cave']
 }
 
 export default attributes
