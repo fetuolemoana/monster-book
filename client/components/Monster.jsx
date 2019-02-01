@@ -1,5 +1,6 @@
 import React from 'react'
 import monsters from '../../data/monsters'
+import Sitings from './Sitings'
 
 const Monster = (props) => {
   const {monster, id} = props.match.params
@@ -15,6 +16,7 @@ const Monster = (props) => {
       <h3>{chosenMonster.element}</h3>
       <h3>{chosenMonster.habitat}</h3>
       <h3>{chosenMonster.description}</h3>
+      <Sitings monsterId={id}/>
     </div>
   )
 }
