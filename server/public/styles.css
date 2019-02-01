@@ -97,3 +97,7 @@ body {
 .padded-div {
   padding-left: 90px;
 }
+
+.imageSize {
+  width: 400px;
+}
