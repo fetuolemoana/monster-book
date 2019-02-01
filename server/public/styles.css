@@ -1,0 +1,31 @@
+.nav-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.nav-li {
+  float: left;
+}
+
+.nav-li-a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  padding-top: 18px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.nav-li-a:hover {
+  background-color: #111;
+}
+
+.home-icon {
+  width: 40px;
+  padding: 14px 14px;
+  padding-top: 14px;
+}
