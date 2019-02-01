@@ -22,7 +22,9 @@ const Monster = (props) => {
         <h3 className="monster-attr" style={capStyle}>{chosenMonster.region} |  {chosenMonster.element} | {chosenMonster.habitat}</h3>
         <h3 className="monster-description">{chosenMonster.description}</h3>
       </div>
-      <Sitings monsterId={id}/>
+      <div className="monster-attr">
+        <Sitings monsterId={id}/>
+      </div>
     </div>
   )
 }

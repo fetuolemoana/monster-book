@@ -2,7 +2,8 @@ body {
   font-family: 'Roboto Mono', monospace;
   background-image: url('./images/paper-bg.jpg');
   background-repeat: no-repeat, repeat;
-  /* background-color: grey; */
+  background-size: cover;
+
 }
 
 .nav-ul {
@@ -71,8 +72,8 @@ body {
 }
  
 .attr-li {
-  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
-
+  font: 200 20px/1.5 'Roboto Mono', monospace;
+  font-weight: bold;
 }
  
 .attr-li:last-child {
@@ -110,6 +111,7 @@ body {
 .monster-name {
   text-align: center;
   color: #9bcc5f; 
+  
 }
 
 .monster-attr {
@@ -117,6 +119,18 @@ body {
 }
 
 .monster-description {
+  text-align: center;
+  margin-left: 600px;
+  margin-right: 600px;
+}
+
+.sitings-heading {
+  text-align: center;
+  color: #9bcc5f;
+  
+}
+
+.siting-description {
   text-align: center;
   margin-left: 600px;
   margin-right: 600px;
