@@ -51,3 +51,49 @@ body {
   font-size: 30px;
   float: right;
 }
+
+.heading {
+  color: #9bcc5f; 
+}
+
+.capitalize {
+  text-transform: 'capitalize';
+}
+
+
+.attr-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ 
+.attr-li {
+  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+
+}
+ 
+.attr-li:last-child {
+  border: none;
+}
+ 
+.attr-li a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  width: 200px;
+ 
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+ 
+.attr-li a:hover {
+  font-size: 30px;
+  background: #f6f6f6;
+}
+
+.padded-div {
+  padding-left: 90px;
+}

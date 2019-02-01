@@ -8,12 +8,18 @@ const MonsterList = (props) => {
   const targetMonsters = monsters.filter((monster) => {
     return monster[attr] === type
   })
+  const capStyle = {
+    textTransform: 'capitalize'
+  }
+  let headingMsg = 'Monsters found in ' + type
+  if (attr === 'habitat') headingMsg += 's'
+  if (attr === 'element') headingMsg = 'Monsters with the ' + type + ' element'
   return (
-    <div>
-      <h1>{attr} : {type}</h1>
-      <ul>
+    <div className="padded-div" style={capStyle}>
+      <h1 className='heading'>{headingMsg}</h1>
+      <ul className="attr-ul">
         {targetMonsters.map((monster, index) => {
-          return <li key={index}><Link to={`/monster/${monster.id}`}>{monster.name}</Link></li>
+          return <li className="attr-li" key={index}><Link to={`/monster/${monster.id}`}>{monster.name}</Link></li>
         })}
       </ul>
     </div>

@@ -3,11 +3,14 @@ import attributes from '../../data/attributes'
 import {Link} from 'react-router-dom'
 
 const HabitatList = () => {
+  const capStyle = {
+    textTransform: 'capitalize'
+  }
   return (
-    <div>
-      <h1>Habitat</h1>
-      <ul>
-        {attributes.habitat.map(hab => { return <li key={hab}><Link to={`/attribute/habitat/${hab}`}>{hab}</Link></li> })}
+    <div className="padded-div" style={capStyle}>
+      <h1 className='heading'>Habitat</h1>
+      <ul className="attr-ul">
+        {attributes.habitat.map(hab => { return <li className="attr-li" key={hab}><Link to={`/attribute/habitat/${hab}`}>{hab}</Link></li> })}
       </ul>
     </div>
   )
