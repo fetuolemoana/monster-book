@@ -9,7 +9,7 @@ const Monster = (props) => {
   console.log(chosenMonster.image)
   return (
     <div>
-      <img src={chosenMonster.image}/>
+      <img className='imageSize' src={chosenMonster.image}/>
       <h1>{chosenMonster.name}</h1>
       <h3>{chosenMonster.region}</h3>
       <h3>{chosenMonster.element}</h3>
