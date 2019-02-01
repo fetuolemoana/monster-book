@@ -1,4 +1,4 @@
-export const sitings = [
+const sitings = [
   {
     monsterId: 1,
     description: 'Loch Ness spotted visiting other lakes in what some experts are suggesting is the first reported case of a celebrity monster relocation. '
@@ -20,3 +20,5 @@ export const sitings = [
     description: 'Test Test Monster'
   }
 ]
+
+export default sitings
