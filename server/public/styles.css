@@ -1,5 +1,8 @@
 body {
   font-family: 'Roboto Mono', monospace;
+  background-image: url('./images/paper-bg.jpg');
+
+  /* background-color: grey; */
 }
 
 .nav-ul {
@@ -100,4 +103,21 @@ body {
 
 .imageSize {
   width: 400px;
+  position: relative;
+  left: 40%;
+}
+
+.monster-name {
+  text-align: center;
+  color: #9bcc5f; 
+}
+
+.monster-attr {
+  text-align: center;
+}
+
+.monster-description {
+  text-align: center;
+  margin-left: 600px;
+  margin-right: 600px;
 }
