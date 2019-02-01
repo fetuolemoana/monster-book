@@ -3,19 +3,25 @@ import monsters from '../../data/monsters'
 import Sitings from './Sitings'
 
 const Monster = (props) => {
-  const {monster, id} = props.match.params
+  const { monster, id } = props.match.params
   const chosenMonster = monsters.find(monster => {
     return Number(id) === monster.id
   })
-  console.log(chosenMonster.image)
+  const capStyle = {
+    textTransform: 'capitalize'
+  }
   return (
     <div>
-      <img className='imageSize' src={chosenMonster.image}/>
-      <h1>{chosenMonster.name}</h1>
-      <h3>{chosenMonster.region}</h3>
-      <h3>{chosenMonster.element}</h3>
-      <h3>{chosenMonster.habitat}</h3>
-      <h3>{chosenMonster.description}</h3>
+      <h1 className="monster-name" >{chosenMonster.name}</h1>
+
+      <div>
+        <img className='imageSize' src={chosenMonster.image}/>
+      </div>
+
+      <div>
+        <h3 className="monster-attr" style={capStyle}>{chosenMonster.region} |  {chosenMonster.element} | {chosenMonster.habitat}</h3>
+        <h3 className="monster-description">{chosenMonster.description}</h3>
+      </div>
       <Sitings monsterId={id}/>
     </div>
   )

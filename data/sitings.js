@@ -13,11 +13,11 @@ const sitings = [
   },
   {
     monsterId: 4,
-    description: 'Jersey Devil last spotted January 1909. Cursed ch'
+    description: 'Jersey Devil last spotted January 1909. While testing cannon balls at Hanover Mills Works in the Pine Barrens, Navy Commander Stephen Decatur reportedly saw the creature and shot it. (Talk about target practice.) The cannon ball blew a hole in the Devil, but it wasnt fazed by the projectile. Strange tracks were found in fields, but bloodhounds allegedly refused to follow the tracks. The kids were fine with it all though because schools in the Pine Barrens were closed.'
   },
   {
     monsterId: 5,
-    description: 'Test Test Monster'
+    description: 'Last seen leading Kupe and family to a strange new land - Aotearoa'
   }
 ]
 
