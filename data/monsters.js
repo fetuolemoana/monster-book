@@ -12,7 +12,7 @@ const monsters = [
     id: 2,
     name: 'Yeti',
     description: 'Furry giant',
-    image: 'yeti.jpg',
+    image: 'yeti.png',
     region: 'asia',
     element: 'earth',
     habitat: 'mountain'
