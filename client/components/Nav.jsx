@@ -13,14 +13,14 @@ const capitalize = (word) => {
 
 const Nav = () => {
   return (
-    <div className='div'>
+    <div className='nav-div'>
       <ul className="nav-ul">
         <li className="nav-li"><Link to="/"><img className="home-icon" src={homeIcon}/></Link></li>
         {attList.map((attNav, index) => {
           return <li className="nav-li" key={index}><Link className="nav-li-a" to={`/${attNav}`}>{capitalize(attNav)}</Link></li>
         })}
+        <div className="nav-li nav-header"><b>Monster Book</b></div>
       </ul>
-
     </div>
   )
 }
