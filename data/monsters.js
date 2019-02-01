@@ -3,7 +3,7 @@ const monsters = [
     id: 1,
     name: 'Nessie',
     description: 'Long neck dinosaur',
-    image: 'nessie.jpg',
+    image: '/images/nessie.jpg',
     region: 'europe',
     element: 'water',
     habitat: 'lake'
@@ -12,7 +12,7 @@ const monsters = [
     id: 2,
     name: 'Yeti',
     description: 'Furry giant',
-    image: 'yeti.png',
+    image: '/images/yeti.png',
     region: 'asia',
     element: 'earth',
     habitat: 'mountain'
@@ -21,7 +21,7 @@ const monsters = [
     id: 3,
     name: 'Tikoloshe',
     description: 'Sprite',
-    image: 'tikoloshe.jpg',
+    image: '/images/tokoloshe.jpg',
     region: 'africa',
     element: 'water',
     habitat: 'river'
@@ -30,7 +30,7 @@ const monsters = [
     id: 4,
     name: 'Jersey devil',
     description: 'a flying biped with hooves, but there are many variations. The common description is that of a kangaroo-like or wyvern-like creature with a goat- or horse-like head, leathery bat-like wings, horns, small arms with clawed hands, cloven hooves and a forked tail. It has been reported to move quickly and often is described as emitting a blood-curdling scream.',
-    image: 'jersey.jpg',
+    image: '/images/jersey.jpg',
     region: 'americas',
     element: 'wind',
     habitat: 'forest'
@@ -39,7 +39,7 @@ const monsters = [
     id: 5,
     name: "Fe'e",
     description: 'The coolest octopus',
-    image: 'fee.jpg',
+    image: '/images/fee.jpg',
     region: 'oceania',
     element: 'water',
     habitat: 'cave'

@@ -2,12 +2,19 @@ import React from 'react'
 import monsters from '../../data/monsters'
 
 const Monster = (props) => {
-  const id = props.match.params.id
+  const {monster, id} = props.match.params
+  const chosenMonster = monsters.find(monster => {
+    return Number(id) === monster.id
+  })
+  console.log(chosenMonster.image)
   return (
     <div>
-      <h1 className='heading capitalize'>Hello</h1>
-      <h1>{name}</h1>
-      <h1>{description}</h1>git
+      <img src={chosenMonster.image}/>
+      <h1>{chosenMonster.name}</h1>
+      <h3>{chosenMonster.region}</h3>
+      <h3>{chosenMonster.element}</h3>
+      <h3>{chosenMonster.habitat}</h3>
+      <h3>{chosenMonster.description}</h3>
     </div>
   )
 }
