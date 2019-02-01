@@ -1,0 +1,53 @@
+body {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.nav-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.nav-li {
+  float: left;
+}
+
+.nav-li-a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.nav-li-a:hover {
+  background-color: #111;
+}
+
+.home-icon {
+  width: 40px;
+  padding: 14px 14px;
+  padding-top: 14px;
+}
+
+.header {
+  padding: 40px;
+  text-align: center;
+  background: #9bcc5f;;
+  color: white;
+  font-size: 50px;
+  margin-top: 10px;
+}
+
+.nav-header {
+  display: block;
+  color: #f0c610;
+  text-align: right;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 30px;
+  float: right;
+}

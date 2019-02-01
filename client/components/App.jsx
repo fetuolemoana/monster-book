@@ -8,11 +8,13 @@ import HabitatList from './HabitatList'
 import Monster from './Monster'
 import ElementList from './ElementList'
 import MonsterList from './MonsterList'
+import Header from './Header'
 
 const App = () => {
   return (
     <div>
       <Nav />
+      {/* <Header /> */}
 
       <Route exact path="/" component={Home} />
       <Route path="/region" component={RegionList} />

@@ -1,9 +1,11 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import attributes from '../../data/attributes'
 
 const attList = Object.keys(attributes)
+
+const homeIcon = '/images/home-icon.png'
 
 const capitalize = (word) => {
   return word[0].toUpperCase() + word.split('').slice(1).join('')
@@ -11,14 +13,14 @@ const capitalize = (word) => {
 
 const Nav = () => {
   return (
-    <div className='div'>
-      <h1>Nav</h1>
-      <ul>
+    <div className='nav-div'>
+      <ul className="nav-ul">
+        <li className="nav-li"><Link to="/"><img className="home-icon" src={homeIcon}/></Link></li>
         {attList.map((attNav, index) => {
-          return <li key={index}><Link to={`/${attNav}`}>{capitalize(attNav)}</Link></li>
+          return <li className="nav-li" key={index}><Link className="nav-li-a" to={`/${attNav}`}>{capitalize(attNav)}</Link></li>
         })}
+        <div className="nav-li nav-header"><b>Monster Book</b></div>
       </ul>
-
     </div>
   )
 }
