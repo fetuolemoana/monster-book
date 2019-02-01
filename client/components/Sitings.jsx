@@ -21,7 +21,10 @@ class Sitings extends React.Component {
   }
 
   handleSubmit () {
-    this.state.allSitings.push(this.state.newSiting)
+    const newSiting = this.state.newSiting
+    this.setState({
+      allSitings: [...this.state.allSitings, {id: this.props.monsterId, description: newSiting}]
+    })
   }
 
   render () {
@@ -41,7 +44,7 @@ class Sitings extends React.Component {
 
         <form>
           <input name='newSiting' type='text' value={this.state.newSiting} onChange={this.addSiting}/>
-          <button type='submit' onSubmit={this.handleSubmit}>Submit </button>
+          <button type='submit' onClick={this.handleSubmit}>Submit </button>
         </form>
       </div>
     )
