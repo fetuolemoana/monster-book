@@ -1,7 +1,7 @@
 body {
   font-family: 'Roboto Mono', monospace;
   background-image: url('./images/paper-bg.jpg');
-
+  background-repeat: no-repeat, repeat;
   /* background-color: grey; */
 }
 
