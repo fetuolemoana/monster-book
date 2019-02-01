@@ -6,6 +6,20 @@ body {
 
 }
 
+.home-heading {
+  color: #9bcc5f; 
+  text-align: center;
+  margin-top: 60px;
+  font-size: 60px;
+}
+
+.home-image {
+  /* background-image: url('./images/bby.png'); */
+  width: 400px;
+  position: relative;
+  left: 40%;
+}
+
 .nav-ul {
   list-style-type: none;
   margin: 0;
